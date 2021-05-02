@@ -2,7 +2,7 @@
 
 - name: Install packages
   yum:
-    name: kibana
+    name: kibana-{{ es_version }}
     state: present
 
 - name: Update kibana config

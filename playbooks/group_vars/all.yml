@@ -161,6 +161,7 @@ kafka_zookeeper_chroot: ""
 
 es_user: elasticsearch
 es_group: elasticsearch
+es_version: 7.12.0
 es_data_dir: "{{ rock_data_dir }}/elasticsearch"
 es_cluster_name: rocknsm
 es_node_name: "{{ inventory_hostname }}"

@@ -3,8 +3,8 @@
 - name: Install packages
   yum:
     name:
-      - java-11-openjdk-headless
-      - elasticsearch
+      - java-11-openjdk-headless # will not be needed if version is higher than 7.10. JDK is included with elastic stack
+      - elasticsearch-{{ es_version }}
     state: installed
   register: es_install
 
